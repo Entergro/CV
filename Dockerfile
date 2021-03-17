@@ -22,6 +22,6 @@ RUN 	apt update && apt upgrade -y && \
 
 VOLUME ["/data"]
 WORKDIR /data
-COPY src /data
+COPY CV /data
 CMD pdflatex -interaction=nonstopmode /data/main.tex
 
